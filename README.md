@@ -22,8 +22,8 @@ long-term memories.
 | `llm.py` | Streams thinking and response text from the Gemma model. |
 | `semantic_memory.py` | Extracts, embeds, saves, and retrieves long-term memories. |
 | `store_history.py` | Loads and saves conversation history. |
-| `chat history/conversation_history.json` | Generated chat history; ignored by Git. |
-| `Memory/knowledge.json` | Generated memories and embeddings; ignored by Git. |
+| `chat history/conversation_history.json` | Generated chat history. |
+| `Memory/knowledge.json` | Generated memories and embeddings. |
 
 The application sends relevant stored memories to the model before the latest
 user message. After each successful response, it saves the conversation and
