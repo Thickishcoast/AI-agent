@@ -40,11 +40,10 @@ asks the model to extract any useful long-term facts from the user's message.
 Clone the repository and enter the project directory:
 
 ```powershell
-git clone <repository-url> "Agentic AI"
-cd "Agentic AI"
+git clone "https://github.com/Thickishcoast/AI-agent"
+cd "AI-agent"
 ```
 
-Replace `<repository-url>` with the HTTPS or SSH URL of this repository.
 
 Install the Python dependencies:
 
@@ -75,32 +74,9 @@ python main.py
 
 Type a message and press Enter. Enter `exit` or `quit` to stop the program.
 
-On later runs, enter the project directory and start the application:
-
-```powershell
-cd "Agentic AI"
-python main.py
-```
-
-## macOS or Linux
-
-The setup is the same except for virtual-environment activation:
-
-```bash
-git clone <repository-url> "Agentic AI"
-cd "Agentic AI"
-python3 -m pip install -r requirements.txt
-ollama pull gemma4:e4b
-ollama pull embeddinggemma
-python3 main.py
-```
 
 ## Data and privacy
 
 The model runs through the local Ollama service. Conversation history and
-long-term memory are stored locally in JSON files. These generated files,
-`.venv`, `.agents`, and Python cache files are excluded by `.gitignore`.
+long-term memory are stored locally in JSON files.
 
-To start with a fresh conversation or empty memory, stop the program and delete
-the corresponding generated JSON file. The application recreates it when
-needed.
